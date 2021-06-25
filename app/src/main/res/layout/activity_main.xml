@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/black"
+    android:background="@mipmap/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvSecurityScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Security Screen"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEnterYourPasscode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Enter your passcode"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSecurityScreen" />
+
+    <ImageButton
+        android:id="@+id/ibPasscode1"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/background_ellipse"
+        app:layout_constraintEnd_toStartOf="@id/tvEnterYourPasscode"
+        app:layout_constraintTop_toBottomOf="@id/tvEnterYourPasscode" />
+
+    <ImageButton
+        android:id="@+id/ibPasscode2"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/background_ellipse"
+        app:layout_constraintEnd_toStartOf="@id/ibPasscode3"
+        app:layout_constraintStart_toEndOf="@id/ibPasscode1"
+        app:layout_constraintTop_toBottomOf="@id/tvEnterYourPasscode" />
+
+    <ImageButton
+        android:id="@+id/ibPasscode3"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/background_ellipse"
+        app:layout_constraintEnd_toStartOf="@id/ibPasscode4"
+        app:layout_constraintStart_toEndOf="@id/ibPasscode2"
+        app:layout_constraintTop_toBottomOf="@id/tvEnterYourPasscode" />
+
+    <ImageButton
+        android:id="@+id/ibPasscode4"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/background_ellipse"
+        app:layout_constraintStart_toEndOf="@id/tvEnterYourPasscode"
+        app:layout_constraintTop_toBottomOf="@id/tvEnterYourPasscode" />
+
+    <Button
+        android:id="@+id/ibNumber1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/background_ellipse"
+        android:text="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ibPasscode1" />
+
+    <Button
+        android:id="@+id/ibNumber2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/background_ellipse"
+        android:text="2"
+        app:layout_constraintEnd_toStartOf="@id/ibNumber3"
+        app:layout_constraintStart_toEndOf="@+id/ibNumber1"
+        app:layout_constraintTop_toBottomOf="@id/ibPasscode1" />
+
+    <Button
+        android:id="@+id/ibNumber3"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/background_ellipse"
+        android:text="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ibPasscode1" />
+
+    <Button
+        android:id="@+id/ibNumber4"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_ellipse"
+        android:text="4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ibNumber1" />
+
+    <Button
+        android:id="@+id/ibNumber5"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_ellipse"
+        android:text="5"
+        app:layout_constraintEnd_toStartOf="@id/ibNumber6"
+        app:layout_constraintStart_toEndOf="@+id/ibNumber4"
+        app:layout_constraintTop_toBottomOf="@id/ibNumber1" />
+
+    <Button
+        android:id="@+id/ibNumber6"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/background_ellipse"
+        android:text="6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ibNumber3" />
+
+    <Button
+        android:id="@+id/ibNumber7"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_ellipse"
+        android:text="7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ibNumber4" />
+
+    <Button
+        android:id="@+id/ibNumber8"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_ellipse"
+        android:text="8"
+        app:layout_constraintEnd_toStartOf="@id/ibNumber9"
+        app:layout_constraintStart_toEndOf="@+id/ibNumber7"
+        app:layout_constraintTop_toBottomOf="@id/ibNumber4" />
+
+    <Button
+        android:id="@+id/ibNumber9"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/background_ellipse"
+        android:text="9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ibNumber6" />
+
+    <Button
+        android:id="@+id/ibFingerPrint"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_ellipse"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ibNumber7" />
+
+    <Button
+        android:id="@+id/ibNumber0"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_ellipse"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@id/ibDelete"
+        app:layout_constraintStart_toEndOf="@id/ibFingerPrint"
+        app:layout_constraintTop_toBottomOf="@id/ibNumber7" />
+
+    <Button
+        android:id="@+id/ibDelete"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/background_ellipse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ibNumber7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
